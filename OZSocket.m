@@ -36,10 +36,10 @@
 		return nil;
 	}
 
+#if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR
 	self.boundEndpoints = [NSMutableSet set];
 	self.connectedEndpoints = [NSMutableSet set];
 
-#if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR
 	NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
 	[center addObserver:self selector:@selector(didEnterBackground) name:UIApplicationDidEnterBackgroundNotification object:nil];
 	[center addObserver:self selector:@selector(willEnterForeground) name:UIApplicationWillEnterForegroundNotification object:nil];
