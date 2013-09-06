@@ -9,6 +9,8 @@
 #ifndef OZMQ_h
 #define OZMQ_h
 
+#import <Foundation/Foundation.h>
+
 #import "OZContext.h"
 #import "OZMessage.h"
 
