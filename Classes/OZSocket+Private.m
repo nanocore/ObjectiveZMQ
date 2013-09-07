@@ -10,24 +10,11 @@
 
 #import "OZMessage.h"
 
+#import "NSData+ZMQMessage.h"
+
 #import "zmq.h"
 
 @implementation OZSocket (Private)
-
-- (NSData *)dataForMessagePart:(zmq_msg_t*)part;
-{
-	if (!part) {
-		return nil;
-	}
-	size_t partLength = zmq_msg_size(part);
-
-	void * partBytes = zmq_msg_data(part);
-	if (!partBytes) {
-		return nil;
-	}
-	NSData *result = [NSData dataWithBytes:partBytes length:partLength];
-	return result;
-}
 
 - (OZMessage *)receive__ALREADY_ON_SOCKET_QUEUE__
 {
@@ -47,7 +34,7 @@
 			return nil;
 		}
 
-		NSData *partData = [self dataForMessagePart:&part];
+		NSData *partData = [NSData dataWithZmqMessage:&part];
 		if (!partData) {
 			zmq_msg_close(&part);
 			return nil;

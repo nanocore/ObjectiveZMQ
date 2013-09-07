@@ -17,9 +17,6 @@
 
 @interface OZSocket ()
 
-@property (nonatomic, assign) void *zmqSocket;
-@property (nonatomic, strong) dispatch_queue_t socketQueue;
-
 #if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR
 @property (nonatomic, strong) NSMutableSet *boundEndpoints;
 @property (nonatomic, strong) NSMutableSet *connectedEndpoints;
@@ -36,36 +33,11 @@
 	return nil;
 }
 
-- (id)initWithType:(int)socketType context:(OZContext *)context
-{
-	self = [super init];
-	if (!self) {
-		return nil;
-	}
-
-#if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR
-	self.boundEndpoints = [NSMutableSet set];
-	self.connectedEndpoints = [NSMutableSet set];
-
-	NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
-	[center addObserver:self selector:@selector(didEnterBackground) name:UIApplicationDidEnterBackgroundNotification object:nil];
-	[center addObserver:self selector:@selector(willEnterForeground) name:UIApplicationWillEnterForegroundNotification object:nil];
-#endif
-
-	self.socketQueue = dispatch_queue_create("OZSocket", 0);
-	dispatch_sync(self.socketQueue, ^{
-		self->_zmqSocket = zmq_socket([context zmqContext], socketType);
-	});
-
-	return self;
-}
-
 - (void)dealloc
 {
 	[[NSNotificationCenter defaultCenter] removeObserver:self];
 	dispatch_sync(self.socketQueue, ^{
 		zmq_close(self.zmqSocket);
-		self.zmqSocket = NULL;
 	});
 }
 
@@ -160,21 +132,6 @@
 #if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR
 		[self.connectedEndpoints removeObject:endpoint];
 #endif
-	});
-}
-
-
-#pragma mark message handling
-
-- (void)receiveWithBlock:(void (^)(OZMessage *))block onQueue:(dispatch_queue_t)queue
-{
-	assert(block);
-	assert(queue);
-	dispatch_async(self.socketQueue, ^{
-		OZMessage *result = [self receive__ALREADY_ON_SOCKET_QUEUE__];
-		if (result) {
-			dispatch_async(queue, ^{block(result);});
-		}
 	});
 }
 

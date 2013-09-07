@@ -10,7 +10,11 @@
 
 #import "OZSocket.h"
 
-@interface OZSocketSub : OZSocket
+#import "OZSocketReceive.h"
+
+@interface OZSocketSub
+: OZSocket
+< OZSocketReceive >
 
 - (void)subscribe:(NSData *)prefix;
 

@@ -8,7 +8,11 @@
 
 #import "OZSocketReq.h"
 
+#import "OZSocket+Subclass.h"
 #import "OZSocket+Private.h"
+
+#import "OZSocket+Receive.h"
+#import "OZSocket+Send.h"
 
 #import "OZContext.h"
 

@@ -17,14 +17,11 @@
 @property (nonatomic, strong, readonly) dispatch_queue_t socketQueue;
 
 - (id)init UNAVAILABLE_ATTRIBUTE;
-- (id)initWithType:(int)socketType context:(OZContext *)context;
 
 - (NSURL *)bind:(NSString *)endpoint;
 - (void)unbind:(NSString *)endpoint;
 
 - (NSURL *)connect:(NSString *)endpoint;
 - (void)disconnect:(NSString *)endpoint;
-
-- (void)receiveWithBlock:(void (^)(OZMessage *))block onQueue:(dispatch_queue_t)queue;
 
 @end

@@ -12,6 +12,8 @@
 
 #import "OZSocket+Send.h"
 
+#import "OZSocket+Subclass.h"
+
 #import "zmq.h"
 
 @implementation OZSocketPub

@@ -10,9 +10,15 @@
 
 #import "OZSocket.h"
 
+#import "OZSocketReceive.h"
+#import "OZSocketSend.h"
+
 @class OZMessage;
 
-@interface OZSocketRep : OZSocket
+@interface OZSocketRep
+: OZSocket
+< OZSocketReceive
+, OZSocketSend >
 
 - (void)poll:(OZMessage *(^)(OZMessage *request))handler;
 
