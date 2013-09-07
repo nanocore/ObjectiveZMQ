@@ -12,6 +12,7 @@
 #import "OZMessage.h"
 
 #import "OZSocket+Private.h"
+#import "OZSocket+Subclass.h"
 
 #import "zmq.h"
 
@@ -36,9 +37,7 @@
 - (void)dealloc
 {
 	[[NSNotificationCenter defaultCenter] removeObserver:self];
-	dispatch_sync(self.socketQueue, ^{
-		zmq_close(self.zmqSocket);
-	});
+	[self close];
 }
 
 #if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR
@@ -132,6 +131,14 @@
 #if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR
 		[self.connectedEndpoints removeObject:endpoint];
 #endif
+	});
+}
+
+- (void)close
+{
+	dispatch_sync(self.socketQueue, ^{
+		zmq_close(self.zmqSocket);
+		self.zmqSocket = nil;
 	});
 }
 

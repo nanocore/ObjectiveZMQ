@@ -24,4 +24,6 @@
 - (NSURL *)connect:(NSString *)endpoint;
 - (void)disconnect:(NSString *)endpoint;
 
+- (void)close;
+
 @end
