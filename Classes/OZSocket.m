@@ -178,11 +178,4 @@
 	});
 }
 
-- (void)send:(OZMessage *)message
-{
-	dispatch_async(self.socketQueue, ^{
-		[self send__ALREADY_ON_SOCKET_QUEUE__:message];
-	});
-}
-
 @end

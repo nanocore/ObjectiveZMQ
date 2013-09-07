@@ -26,6 +26,5 @@
 - (void)disconnect:(NSString *)endpoint;
 
 - (void)receiveWithBlock:(void (^)(OZMessage *))block onQueue:(dispatch_queue_t)queue;
-- (void)send:(OZMessage *)message;
 
 @end

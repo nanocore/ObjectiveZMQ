@@ -10,6 +10,8 @@
 
 #import "OZContext.h"
 
+#import "OZSocket+Send.h"
+
 #import "zmq.h"
 
 @implementation OZSocketPub

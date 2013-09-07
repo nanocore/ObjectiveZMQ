@@ -10,6 +10,10 @@
 
 #import "OZSocket.h"
 
-@interface OZSocketPub : OZSocket
+#import "OZSocketSend.h"
+
+@interface OZSocketPub
+: OZSocket
+< OZSocketSend >
 
 @end

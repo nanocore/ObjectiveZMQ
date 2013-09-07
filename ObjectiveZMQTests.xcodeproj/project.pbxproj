@@ -1,0 +1,393 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A8186D117DB3985009C2708 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A8186D017DB3985009C2708 /* SenTestingKit.framework */; };
+		4A8186DB17DB3985009C2708 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4A8186D917DB3985009C2708 /* InfoPlist.strings */; };
+		4AFB9B5717DB3AB700C8014D /* OZSocketSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFB9B5617DB3AB700C8014D /* OZSocketSpec.m */; };
+		4AFB9B5817DB3B5D00C8014D /* OZContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8186A117DA1039009C2708 /* OZContext.m */; };
+		4AFB9B5917DB3B5D00C8014D /* OZMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8186A317DA1039009C2708 /* OZMessage.m */; };
+		4AFB9B5A17DB3B5D00C8014D /* OZSocket+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8186A617DA1039009C2708 /* OZSocket+Private.m */; };
+		4AFB9B5B17DB3B5D00C8014D /* OZSocket+Send.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8186C617DB385E009C2708 /* OZSocket+Send.m */; };
+		4AFB9B5C17DB3B5D00C8014D /* OZSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8186A817DA1039009C2708 /* OZSocket.m */; };
+		4AFB9B5D17DB3B5D00C8014D /* OZSocketPub.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8186AA17DA1039009C2708 /* OZSocketPub.m */; };
+		4AFB9B5E17DB3B5D00C8014D /* OZSocketRep.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8186AC17DA1039009C2708 /* OZSocketRep.m */; };
+		4AFB9B5F17DB3B5D00C8014D /* OZSocketReq.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8186AE17DA1039009C2708 /* OZSocketReq.m */; };
+		4AFB9B6017DB3B5D00C8014D /* OZSocketSub.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8186B017DA1039009C2708 /* OZSocketSub.m */; };
+		4AFB9B6617DB3BE200C8014D /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AFB9B6517DB3BE200C8014D /* libstdc++.dylib */; };
+		CF452B63FD6849859647698E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C7037CB6FBB4D89BF32D825 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4A8186A017DA1039009C2708 /* OZContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OZContext.h; sourceTree = "<group>"; };
+		4A8186A117DA1039009C2708 /* OZContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OZContext.m; sourceTree = "<group>"; };
+		4A8186A217DA1039009C2708 /* OZMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OZMessage.h; sourceTree = "<group>"; };
+		4A8186A317DA1039009C2708 /* OZMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OZMessage.m; sourceTree = "<group>"; };
+		4A8186A417DA1039009C2708 /* OZMQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OZMQ.h; sourceTree = "<group>"; };
+		4A8186A517DA1039009C2708 /* OZSocket+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OZSocket+Private.h"; sourceTree = "<group>"; };
+		4A8186A617DA1039009C2708 /* OZSocket+Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OZSocket+Private.m"; sourceTree = "<group>"; };
+		4A8186A717DA1039009C2708 /* OZSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OZSocket.h; sourceTree = "<group>"; };
+		4A8186A817DA1039009C2708 /* OZSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OZSocket.m; sourceTree = "<group>"; };
+		4A8186A917DA1039009C2708 /* OZSocketPub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OZSocketPub.h; sourceTree = "<group>"; };
+		4A8186AA17DA1039009C2708 /* OZSocketPub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OZSocketPub.m; sourceTree = "<group>"; };
+		4A8186AB17DA1039009C2708 /* OZSocketRep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OZSocketRep.h; sourceTree = "<group>"; };
+		4A8186AC17DA1039009C2708 /* OZSocketRep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OZSocketRep.m; sourceTree = "<group>"; };
+		4A8186AD17DA1039009C2708 /* OZSocketReq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OZSocketReq.h; sourceTree = "<group>"; };
+		4A8186AE17DA1039009C2708 /* OZSocketReq.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OZSocketReq.m; sourceTree = "<group>"; };
+		4A8186AF17DA1039009C2708 /* OZSocketSub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OZSocketSub.h; sourceTree = "<group>"; };
+		4A8186B017DA1039009C2708 /* OZSocketSub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OZSocketSub.m; sourceTree = "<group>"; };
+		4A8186C417DB381D009C2708 /* OZSocketSend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OZSocketSend.h; sourceTree = "<group>"; };
+		4A8186C517DB385E009C2708 /* OZSocket+Send.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OZSocket+Send.h"; sourceTree = "<group>"; };
+		4A8186C617DB385E009C2708 /* OZSocket+Send.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OZSocket+Send.m"; sourceTree = "<group>"; };
+		4A8186CF17DB3985009C2708 /* ObjectiveZMQTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveZMQTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A8186D017DB3985009C2708 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		4A8186D817DB3985009C2708 /* ObjectiveZMQTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ObjectiveZMQTests-Info.plist"; sourceTree = "<group>"; };
+		4A8186DA17DB3985009C2708 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4A8186DF17DB3985009C2708 /* ObjectiveZMQTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjectiveZMQTests-Prefix.pch"; sourceTree = "<group>"; };
+		4AFB9B5617DB3AB700C8014D /* OZSocketSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OZSocketSpec.m; sourceTree = "<group>"; };
+		4AFB9B6517DB3BE200C8014D /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "../../../../../usr/lib/libstdc++.dylib"; sourceTree = "<group>"; };
+		8C7037CB6FBB4D89BF32D825 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DDFB44972DC4F349D80430D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A8186CB17DB3985009C2708 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AFB9B6617DB3BE200C8014D /* libstdc++.dylib in Frameworks */,
+				4A8186D117DB3985009C2708 /* SenTestingKit.framework in Frameworks */,
+				CF452B63FD6849859647698E /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A6516BE17D9E143002E9C19 = {
+			isa = PBXGroup;
+			children = (
+				4AFB9B6517DB3BE200C8014D /* libstdc++.dylib */,
+				4A81869F17DA1039009C2708 /* Classes */,
+				4A8186D617DB3985009C2708 /* ObjectiveZMQTests */,
+				4A6516C817D9E143002E9C19 /* Products */,
+				8DDFB44972DC4F349D80430D /* Pods.xcconfig */,
+				A805E925BA754C52995A278A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4A6516C817D9E143002E9C19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A8186CF17DB3985009C2708 /* ObjectiveZMQTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A81869F17DA1039009C2708 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4A8186A017DA1039009C2708 /* OZContext.h */,
+				4A8186A117DA1039009C2708 /* OZContext.m */,
+				4A8186A217DA1039009C2708 /* OZMessage.h */,
+				4A8186A317DA1039009C2708 /* OZMessage.m */,
+				4A8186A417DA1039009C2708 /* OZMQ.h */,
+				4A8186A517DA1039009C2708 /* OZSocket+Private.h */,
+				4A8186A617DA1039009C2708 /* OZSocket+Private.m */,
+				4A8186C517DB385E009C2708 /* OZSocket+Send.h */,
+				4A8186C617DB385E009C2708 /* OZSocket+Send.m */,
+				4A8186A717DA1039009C2708 /* OZSocket.h */,
+				4A8186A817DA1039009C2708 /* OZSocket.m */,
+				4A8186A917DA1039009C2708 /* OZSocketPub.h */,
+				4A8186AA17DA1039009C2708 /* OZSocketPub.m */,
+				4A8186AB17DA1039009C2708 /* OZSocketRep.h */,
+				4A8186AC17DA1039009C2708 /* OZSocketRep.m */,
+				4A8186AD17DA1039009C2708 /* OZSocketReq.h */,
+				4A8186AE17DA1039009C2708 /* OZSocketReq.m */,
+				4A8186C417DB381D009C2708 /* OZSocketSend.h */,
+				4A8186AF17DA1039009C2708 /* OZSocketSub.h */,
+				4A8186B017DA1039009C2708 /* OZSocketSub.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4A8186D617DB3985009C2708 /* ObjectiveZMQTests */ = {
+			isa = PBXGroup;
+			children = (
+				4A8186D717DB3985009C2708 /* Supporting Files */,
+				4AFB9B5617DB3AB700C8014D /* OZSocketSpec.m */,
+			);
+			path = ObjectiveZMQTests;
+			sourceTree = "<group>";
+		};
+		4A8186D717DB3985009C2708 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4A8186D817DB3985009C2708 /* ObjectiveZMQTests-Info.plist */,
+				4A8186D917DB3985009C2708 /* InfoPlist.strings */,
+				4A8186DF17DB3985009C2708 /* ObjectiveZMQTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A805E925BA754C52995A278A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C7037CB6FBB4D89BF32D825 /* libPods.a */,
+				4A8186D017DB3985009C2708 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4A8186CE17DB3985009C2708 /* ObjectiveZMQTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A8186E017DB3985009C2708 /* Build configuration list for PBXNativeTarget "ObjectiveZMQTests" */;
+			buildPhases = (
+				78B498E339F04613A657D174 /* Check Pods Manifest.lock */,
+				4A8186CA17DB3985009C2708 /* Sources */,
+				4A8186CB17DB3985009C2708 /* Frameworks */,
+				4A8186CC17DB3985009C2708 /* Resources */,
+				4A8186CD17DB3985009C2708 /* ShellScript */,
+				32E6A78B675441B5868BA542 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ObjectiveZMQTests;
+			productName = ObjectiveZMQTests;
+			productReference = 4A8186CF17DB3985009C2708 /* ObjectiveZMQTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4A6516BF17D9E143002E9C19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Savage Interactive";
+			};
+			buildConfigurationList = 4A6516C217D9E143002E9C19 /* Build configuration list for PBXProject "ObjectiveZMQTests" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4A6516BE17D9E143002E9C19;
+			productRefGroup = 4A6516C817D9E143002E9C19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A8186CE17DB3985009C2708 /* ObjectiveZMQTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4A8186CC17DB3985009C2708 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A8186DB17DB3985009C2708 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32E6A78B675441B5868BA542 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A8186CD17DB3985009C2708 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		78B498E339F04613A657D174 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A8186CA17DB3985009C2708 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AFB9B5717DB3AB700C8014D /* OZSocketSpec.m in Sources */,
+				4AFB9B5817DB3B5D00C8014D /* OZContext.m in Sources */,
+				4AFB9B5917DB3B5D00C8014D /* OZMessage.m in Sources */,
+				4AFB9B5A17DB3B5D00C8014D /* OZSocket+Private.m in Sources */,
+				4AFB9B5B17DB3B5D00C8014D /* OZSocket+Send.m in Sources */,
+				4AFB9B5C17DB3B5D00C8014D /* OZSocket.m in Sources */,
+				4AFB9B5D17DB3B5D00C8014D /* OZSocketPub.m in Sources */,
+				4AFB9B5E17DB3B5D00C8014D /* OZSocketRep.m in Sources */,
+				4AFB9B5F17DB3B5D00C8014D /* OZSocketReq.m in Sources */,
+				4AFB9B6017DB3B5D00C8014D /* OZSocketSub.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4A8186D917DB3985009C2708 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A8186DA17DB3985009C2708 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4A6516CE17D9E143002E9C19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		4A6516CF17D9E143002E9C19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+			};
+			name = Release;
+		};
+		4A8186E117DB3985009C2708 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DDFB44972DC4F349D80430D /* Pods.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ObjectiveZMQTests/ObjectiveZMQTests-Prefix.pch";
+				INFOPLIST_FILE = "ObjectiveZMQTests/ObjectiveZMQTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		4A8186E217DB3985009C2708 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DDFB44972DC4F349D80430D /* Pods.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ObjectiveZMQTests/ObjectiveZMQTests-Prefix.pch";
+				INFOPLIST_FILE = "ObjectiveZMQTests/ObjectiveZMQTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A6516C217D9E143002E9C19 /* Build configuration list for PBXProject "ObjectiveZMQTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A6516CE17D9E143002E9C19 /* Debug */,
+				4A6516CF17D9E143002E9C19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A8186E017DB3985009C2708 /* Build configuration list for PBXNativeTarget "ObjectiveZMQTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A8186E117DB3985009C2708 /* Debug */,
+				4A8186E217DB3985009C2708 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4A6516BF17D9E143002E9C19 /* Project object */;
+}
