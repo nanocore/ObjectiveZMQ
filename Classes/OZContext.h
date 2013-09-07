@@ -10,6 +10,8 @@
 
 @interface OZContext : NSObject
 
-+ (void *)sharedZmqContext;
+@property (nonatomic, assign, readonly) void *zmqContext;
+
++ (OZContext *)defaultContext;
 
 @end

@@ -10,16 +10,40 @@
 
 #import "zmq.h"
 
+@interface OZContext ()
+
+@property (nonatomic, assign) void *zmqContext;
+
+@end
+
 @implementation OZContext
 
-+ (void *)sharedZmqContext
++ (OZContext *)defaultContext
 {
-	static void *result = nil;
+	static OZContext *result = nil;
 	static dispatch_once_t onceToken;
 	dispatch_once(&onceToken, ^{
-		result = zmq_ctx_new();
+		result = [OZContext new];
 	});
 	return result;
+}
+
+- (id)init
+{
+	self = [super init];
+	if (!self) {
+		return nil;
+	}
+	self.zmqContext = zmq_ctx_new();
+	if (!self.zmqContext) {
+		return nil;
+	}
+	return self;
+}
+
+- (void)dealloc
+{
+	zmq_ctx_destroy(self.zmqContext);
 }
 
 @end

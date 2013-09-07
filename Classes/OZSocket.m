@@ -29,7 +29,14 @@
 
 @implementation OZSocket
 
-- (id)initWithType:(int)socketType
+- (id)init
+{
+	[self doesNotRecognizeSelector:_cmd];
+	// only instantiate subclasses of OZSocket with initWithType:inContext:
+	return nil;
+}
+
+- (id)initWithType:(int)socketType context:(OZContext *)context
 {
 	self = [super init];
 	if (!self) {
@@ -47,7 +54,7 @@
 
 	self.socketQueue = dispatch_queue_create("OZSocket", 0);
 	dispatch_sync(self.socketQueue, ^{
-		self->_zmqSocket = zmq_socket([OZContext sharedZmqContext], socketType);
+		self->_zmqSocket = zmq_socket([context zmqContext], socketType);
 	});
 
 	return self;

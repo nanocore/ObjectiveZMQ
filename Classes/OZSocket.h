@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+@class OZContext;
 @class OZMessage;
 
 @interface OZSocket : NSObject
@@ -16,7 +17,7 @@
 @property (nonatomic, strong, readonly) dispatch_queue_t socketQueue;
 
 - (id)init UNAVAILABLE_ATTRIBUTE;
-- (id)initWithType:(int)socketType;
+- (id)initWithType:(int)socketType context:(OZContext *)context;
 
 - (NSURL *)bindZ:(NSString *)endpoint;
 - (void)unbindZ:(NSString *)endpoint;

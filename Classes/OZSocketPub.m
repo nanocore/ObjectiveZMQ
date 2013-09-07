@@ -8,13 +8,15 @@
 
 #import "OZSocketPub.h"
 
+#import "OZContext.h"
+
 #import "zmq.h"
 
 @implementation OZSocketPub
 
 - (id)init
 {
-	self = [super initWithType:ZMQ_PUB];
+	self = [super initWithType:ZMQ_PUB context:[OZContext defaultContext]];
 	if (!self) {
 		return nil;
 	}

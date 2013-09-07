@@ -10,13 +10,15 @@
 
 #import "OZSocket+Private.h"
 
+#import "OZContext.h"
+
 #import "zmq.h"
 
 @implementation OZSocketRep
 
 - (id)init
 {
-	self = [super initWithType:ZMQ_REP];
+	self = [super initWithType:ZMQ_REP context:[OZContext defaultContext]];
 	if (!self) {
 		return nil;
 	}
