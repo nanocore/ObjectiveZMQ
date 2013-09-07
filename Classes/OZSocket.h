@@ -19,8 +19,8 @@
 - (id)init UNAVAILABLE_ATTRIBUTE;
 - (id)initWithType:(int)socketType context:(OZContext *)context;
 
-- (NSURL *)bindZ:(NSString *)endpoint;
-- (void)unbindZ:(NSString *)endpoint;
+- (NSURL *)bind:(NSString *)endpoint;
+- (void)unbind:(NSString *)endpoint;
 
 - (NSURL *)connect:(NSString *)endpoint;
 - (void)disconnect:(NSString *)endpoint;

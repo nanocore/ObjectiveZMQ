@@ -97,7 +97,7 @@
 }
 #endif
 
-- (NSURL *)bindZ:(NSString *)endpoint
+- (NSURL *)bind:(NSString *)endpoint
 {
 	assert(endpoint.length);
 	__block NSURL *result = nil;
@@ -119,7 +119,7 @@
 	});
 	return result;
 }
-- (void)unbindZ:(NSString *)endpoint
+- (void)unbind:(NSString *)endpoint
 {
 	assert(endpoint.length);
 	dispatch_sync(self.socketQueue, ^{
