@@ -14,9 +14,6 @@
 
 @implementation OZSocket (Subclass)
 
-@dynamic zmqSocket;
-@dynamic socketQueue;
-
 - (id)initWithType:(int)socketType context:(OZContext *)context
 {
 	self = [super init];
@@ -39,6 +36,14 @@
 	});
 
 	return self;
+}
+
+- (void)closeSocket
+{
+	dispatch_sync(self.socketQueue, ^{
+		zmq_close(self.zmqSocket);
+		self.zmqSocket = nil;
+	});
 }
 
 @end

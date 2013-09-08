@@ -34,7 +34,7 @@
 
 - (void)subscribe:(NSData *)prefix
 {
-	assert(prefix);
+//	assert(prefix);
 	dispatch_sync(self.socketQueue, ^{
 		zmq_setsockopt(self.zmqSocket, ZMQ_SUBSCRIBE, prefix.bytes, prefix.length);
 	});

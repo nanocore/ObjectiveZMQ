@@ -12,6 +12,9 @@
 		4A9B1CAD17DB429D003F61B8 /* OZSocket+Subclass.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9B1CAC17DB429D003F61B8 /* OZSocket+Subclass.m */; };
 		4A9B1CB317DB44E0003F61B8 /* NSData+ZMQMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9B1CB217DB44E0003F61B8 /* NSData+ZMQMessage.m */; };
 		4A9B1CB717DB482B003F61B8 /* OZSocket+Receive.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9B1CB617DB482B003F61B8 /* OZSocket+Receive.m */; };
+		4A9B1CBA17DB6502003F61B8 /* OZSocketPubSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9B1CB917DB6502003F61B8 /* OZSocketPubSpec.m */; };
+		4A9B1CBF17DB6AE4003F61B8 /* OZSocketSubclassSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9B1CBE17DB6AE4003F61B8 /* OZSocketSubclassSpec.m */; };
+		4A9B1CC417DB6F16003F61B8 /* EXPMatchers+conformToProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9B1CC317DB6F16003F61B8 /* EXPMatchers+conformToProtocol.m */; };
 		4AFB9B5717DB3AB700C8014D /* OZSocketSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFB9B5617DB3AB700C8014D /* OZSocketSpec.m */; };
 		4AFB9B5817DB3B5D00C8014D /* OZContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8186A117DA1039009C2708 /* OZContext.m */; };
 		4AFB9B5917DB3B5D00C8014D /* OZMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8186A317DA1039009C2708 /* OZMessage.m */; };
@@ -59,6 +62,10 @@
 		4A9B1CB417DB47F9003F61B8 /* OZSocketReceive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OZSocketReceive.h; sourceTree = "<group>"; };
 		4A9B1CB517DB482B003F61B8 /* OZSocket+Receive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OZSocket+Receive.h"; sourceTree = "<group>"; };
 		4A9B1CB617DB482B003F61B8 /* OZSocket+Receive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OZSocket+Receive.m"; sourceTree = "<group>"; };
+		4A9B1CB917DB6502003F61B8 /* OZSocketPubSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OZSocketPubSpec.m; sourceTree = "<group>"; };
+		4A9B1CBE17DB6AE4003F61B8 /* OZSocketSubclassSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OZSocketSubclassSpec.m; sourceTree = "<group>"; };
+		4A9B1CC217DB6F16003F61B8 /* EXPMatchers+conformToProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+conformToProtocol.h"; sourceTree = "<group>"; };
+		4A9B1CC317DB6F16003F61B8 /* EXPMatchers+conformToProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+conformToProtocol.m"; sourceTree = "<group>"; };
 		4AFB9B5617DB3AB700C8014D /* OZSocketSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OZSocketSpec.m; sourceTree = "<group>"; };
 		4AFB9B6517DB3BE200C8014D /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "/usr/lib/libstdc++.dylib"; sourceTree = "<absolute>"; };
 		8C7037CB6FBB4D89BF32D825 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,6 +144,10 @@
 			children = (
 				4A8186D717DB3985009C2708 /* Supporting Files */,
 				4AFB9B5617DB3AB700C8014D /* OZSocketSpec.m */,
+				4A9B1CB917DB6502003F61B8 /* OZSocketPubSpec.m */,
+				4A9B1CBE17DB6AE4003F61B8 /* OZSocketSubclassSpec.m */,
+				4A9B1CC217DB6F16003F61B8 /* EXPMatchers+conformToProtocol.h */,
+				4A9B1CC317DB6F16003F61B8 /* EXPMatchers+conformToProtocol.m */,
 			);
 			path = ObjectiveZMQTests;
 			sourceTree = "<group>";
@@ -285,6 +296,9 @@
 				4A9B1CAD17DB429D003F61B8 /* OZSocket+Subclass.m in Sources */,
 				4A9B1CB317DB44E0003F61B8 /* NSData+ZMQMessage.m in Sources */,
 				4A9B1CB717DB482B003F61B8 /* OZSocket+Receive.m in Sources */,
+				4A9B1CBA17DB6502003F61B8 /* OZSocketPubSpec.m in Sources */,
+				4A9B1CBF17DB6AE4003F61B8 /* OZSocketSubclassSpec.m in Sources */,
+				4A9B1CC417DB6F16003F61B8 /* EXPMatchers+conformToProtocol.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

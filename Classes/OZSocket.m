@@ -27,6 +27,9 @@
 
 @implementation OZSocket
 
+@synthesize zmqSocket; // OZSocket+Subclass
+@synthesize socketQueue; // OZSocket+Subclass
+
 - (id)init
 {
 	[self doesNotRecognizeSelector:_cmd];
@@ -136,10 +139,7 @@
 
 - (void)close
 {
-	dispatch_sync(self.socketQueue, ^{
-		zmq_close(self.zmqSocket);
-		self.zmqSocket = nil;
-	});
+	[self closeSocket];
 }
 
 @end

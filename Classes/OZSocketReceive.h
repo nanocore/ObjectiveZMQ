@@ -10,6 +10,9 @@
 
 @protocol OZSocketReceive <NSObject>
 
+- (OZMessage *)receiveSync;
+
+- (void)receiveWithBlock:(void (^)(OZMessage *))block;
 - (void)receiveWithBlock:(void (^)(OZMessage *))block onQueue:(dispatch_queue_t)queue;
 
 @end

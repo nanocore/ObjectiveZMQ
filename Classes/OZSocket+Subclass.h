@@ -8,11 +8,14 @@
 
 #import "OZSocket.h"
 
-@interface OZSocket (Subclass)
-
+@interface OZSocket ()
 @property (nonatomic, assign) void *zmqSocket;
 @property (nonatomic, strong) dispatch_queue_t socketQueue;
+@end
+
+@interface OZSocket (Subclass)
 
 - (id)initWithType:(int)socketType context:(OZContext *)context;
+- (void)closeSocket;
 
 @end

@@ -12,6 +12,26 @@
 
 @implementation OZSocket (Receive)
 
+- (OZMessage *)receiveSync
+{
+	__block OZMessage *result = nil;
+	dispatch_sync(self.socketQueue, ^{
+		result = [self receive__ALREADY_ON_SOCKET_QUEUE__];
+	});
+	return result;
+}
+
+- (void)receiveWithBlock:(void (^)(OZMessage *))block
+{
+	assert(block);
+	dispatch_async(self.socketQueue, ^{
+		OZMessage *result = [self receive__ALREADY_ON_SOCKET_QUEUE__];
+		if (result) {
+			block(result);
+		}
+	});
+}
+
 - (void)receiveWithBlock:(void (^)(OZMessage *))block onQueue:(dispatch_queue_t)queue
 {
 	assert(block);
