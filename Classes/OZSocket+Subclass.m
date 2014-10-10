@@ -51,7 +51,7 @@
 {
 	dispatch_sync(self.socketQueue, ^{
 		zmq_close(self.zmqSocket);
-		self.zmqSocket = nil;
+		self.zmqSocket = NULL;
 	});
 }
 

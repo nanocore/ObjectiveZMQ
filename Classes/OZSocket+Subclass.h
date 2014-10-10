@@ -10,7 +10,7 @@
 
 @interface OZSocket ()
 @property (nonatomic, assign) void *zmqSocket;
-@property (nonatomic, strong) dispatch_queue_t socketQueue;
+@property (nonatomic) dispatch_queue_t socketQueue;
 @end
 
 @interface OZSocket (Subclass)

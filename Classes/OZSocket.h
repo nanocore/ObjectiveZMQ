@@ -14,7 +14,7 @@
 @interface OZSocket : NSObject
 
 @property (nonatomic, assign, readonly) void *zmqSocket;
-@property (nonatomic, strong, readonly) dispatch_queue_t socketQueue;
+@property (nonatomic, readonly) dispatch_queue_t socketQueue;
 
 - (id)init UNAVAILABLE_ATTRIBUTE;
 
