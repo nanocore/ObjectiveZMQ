@@ -17,7 +17,7 @@
 @property (nonatomic, assign, readonly) void *zmqSocket;
 @property (nonatomic, readonly) dispatch_queue_t socketQueue;
 
-- (id)init UNAVAILABLE_ATTRIBUTE;
+- (id)init /* UNAVAILABLE_ATTRIBUTE */;
 
 - (NSURL *)bind:(NSString *)endpoint;
 - (void)unbind:(NSString *)endpoint;
