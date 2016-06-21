@@ -32,6 +32,8 @@ ObjectiveZMQ_OBJC_FILES +=	\
 	OZSocketRep.m		\
 	OZSocketReq.m		\
 	OZSocketSub.m		\
+	OZSocketPull.m		\
+	OZSocketPush.m		\
 
 -include GNUmakefile.preamble
 include $(GNUSTEP_MAKEFILES)/subproject.make
