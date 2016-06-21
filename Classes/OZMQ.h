@@ -19,5 +19,7 @@
 #import "OZSocketRep.h"
 #import "OZSocketReq.h"
 #import "OZSocketSub.h"
+#import "OZSocketPull.h"
+#import "OZSocketPush.h"
 
 #endif
