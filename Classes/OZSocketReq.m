@@ -20,15 +20,18 @@
 
 @implementation OZSocketReq
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wobjc-designated-initializers"
 - (id)init
 {
-	self = [super initWithType:ZMQ_REQ context:[OZContext defaultContext]];
+	self = [self initWithType:ZMQ_REQ context:[OZContext defaultContext]];
 	if (!self) {
 		return nil;
 	}
 
 	return self;
 }
+#pragma clang diagnostic pop
 
 - (void)request:(OZMessage*)message handler:(void (^)(OZMessage *response))callback
 {

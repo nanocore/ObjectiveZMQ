@@ -20,9 +20,11 @@
 
 @implementation OZSocketSub
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wobjc-designated-initializers"
 - (id)init
 {
-	self = [super initWithType:ZMQ_SUB context:[OZContext defaultContext]];
+	self = [self initWithType:ZMQ_SUB context:[OZContext defaultContext]];
 	if (!self) {
 		return nil;
 	}
@@ -31,6 +33,7 @@
 
 	return self;
 }
+#pragma clang diagnostic pop
 
 - (void)subscribe:(NSData *)prefix
 {
