@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4A8186D117DB3985009C2708 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A8186D017DB3985009C2708 /* SenTestingKit.framework */; };
 		4A8186DB17DB3985009C2708 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4A8186D917DB3985009C2708 /* InfoPlist.strings */; };
 		4A9B1CAD17DB429D003F61B8 /* OZSocket+Subclass.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9B1CAC17DB429D003F61B8 /* OZSocket+Subclass.m */; };
 		4A9B1CB317DB44E0003F61B8 /* NSData+ZMQMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9B1CB217DB44E0003F61B8 /* NSData+ZMQMessage.m */; };
@@ -15,6 +14,7 @@
 		4A9B1CBA17DB6502003F61B8 /* OZSocketPubSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9B1CB917DB6502003F61B8 /* OZSocketPubSpec.m */; };
 		4A9B1CBF17DB6AE4003F61B8 /* OZSocketSubclassSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9B1CBE17DB6AE4003F61B8 /* OZSocketSubclassSpec.m */; };
 		4A9B1CC417DB6F16003F61B8 /* EXPMatchers+conformToProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9B1CC317DB6F16003F61B8 /* EXPMatchers+conformToProtocol.m */; };
+		4ACD44F218D29E3F005CB861 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ACD44F118D29E3F005CB861 /* libc++.dylib */; };
 		4AD0816217E9328B0050C60C /* OZSocketRepSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AD0816117E9328B0050C60C /* OZSocketRepSpec.m */; };
 		4AFB9B5717DB3AB700C8014D /* OZSocketSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFB9B5617DB3AB700C8014D /* OZSocketSpec.m */; };
 		4AFB9B5817DB3B5D00C8014D /* OZContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8186A117DA1039009C2708 /* OZContext.m */; };
@@ -26,7 +26,6 @@
 		4AFB9B5E17DB3B5D00C8014D /* OZSocketRep.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8186AC17DA1039009C2708 /* OZSocketRep.m */; };
 		4AFB9B5F17DB3B5D00C8014D /* OZSocketReq.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8186AE17DA1039009C2708 /* OZSocketReq.m */; };
 		4AFB9B6017DB3B5D00C8014D /* OZSocketSub.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8186B017DA1039009C2708 /* OZSocketSub.m */; };
-		4AFB9B6617DB3BE200C8014D /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AFB9B6517DB3BE200C8014D /* libstdc++.dylib */; };
 		CF452B63FD6849859647698E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C7037CB6FBB4D89BF32D825 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -51,8 +50,7 @@
 		4A8186C417DB381D009C2708 /* OZSocketSend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OZSocketSend.h; sourceTree = "<group>"; };
 		4A8186C517DB385E009C2708 /* OZSocket+Send.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OZSocket+Send.h"; sourceTree = "<group>"; };
 		4A8186C617DB385E009C2708 /* OZSocket+Send.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OZSocket+Send.m"; sourceTree = "<group>"; };
-		4A8186CF17DB3985009C2708 /* ObjectiveZMQTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveZMQTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A8186D017DB3985009C2708 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		4A8186CF17DB3985009C2708 /* ObjectiveZMQTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveZMQTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A8186D817DB3985009C2708 /* ObjectiveZMQTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ObjectiveZMQTests-Info.plist"; sourceTree = "<group>"; };
 		4A8186DA17DB3985009C2708 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4A8186DF17DB3985009C2708 /* ObjectiveZMQTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjectiveZMQTests-Prefix.pch"; sourceTree = "<group>"; };
@@ -67,6 +65,7 @@
 		4A9B1CBE17DB6AE4003F61B8 /* OZSocketSubclassSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OZSocketSubclassSpec.m; sourceTree = "<group>"; };
 		4A9B1CC217DB6F16003F61B8 /* EXPMatchers+conformToProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+conformToProtocol.h"; sourceTree = "<group>"; };
 		4A9B1CC317DB6F16003F61B8 /* EXPMatchers+conformToProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+conformToProtocol.m"; sourceTree = "<group>"; };
+		4ACD44F118D29E3F005CB861 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		4AD0816117E9328B0050C60C /* OZSocketRepSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OZSocketRepSpec.m; sourceTree = "<group>"; };
 		4AFB9B5617DB3AB700C8014D /* OZSocketSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OZSocketSpec.m; sourceTree = "<group>"; };
 		4AFB9B6517DB3BE200C8014D /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "/usr/lib/libstdc++.dylib"; sourceTree = "<absolute>"; };
@@ -79,8 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AFB9B6617DB3BE200C8014D /* libstdc++.dylib in Frameworks */,
-				4A8186D117DB3985009C2708 /* SenTestingKit.framework in Frameworks */,
+				4ACD44F218D29E3F005CB861 /* libc++.dylib in Frameworks */,
 				CF452B63FD6849859647698E /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -102,7 +100,7 @@
 		4A6516C817D9E143002E9C19 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4A8186CF17DB3985009C2708 /* ObjectiveZMQTests.octest */,
+				4A8186CF17DB3985009C2708 /* ObjectiveZMQTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -168,9 +166,9 @@
 		A805E925BA754C52995A278A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4ACD44F118D29E3F005CB861 /* libc++.dylib */,
 				4AFB9B6517DB3BE200C8014D /* libstdc++.dylib */,
 				8C7037CB6FBB4D89BF32D825 /* libPods.a */,
-				4A8186D017DB3985009C2708 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -195,8 +193,8 @@
 			);
 			name = ObjectiveZMQTests;
 			productName = ObjectiveZMQTests;
-			productReference = 4A8186CF17DB3985009C2708 /* ObjectiveZMQTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productReference = 4A8186CF17DB3985009C2708 /* ObjectiveZMQTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -204,7 +202,8 @@
 		4A6516BF17D9E143002E9C19 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastTestingUpgradeCheck = 0510;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Savage Interactive";
 			};
 			buildConfigurationList = 4A6516C217D9E143002E9C19 /* Build configuration list for PBXProject "ObjectiveZMQTests" */;
@@ -324,7 +323,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -355,13 +353,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8DDFB44972DC4F349D80430D /* Pods.xcconfig */;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ObjectiveZMQTests/ObjectiveZMQTests-Prefix.pch";
 				INFOPLIST_FILE = "ObjectiveZMQTests/ObjectiveZMQTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};

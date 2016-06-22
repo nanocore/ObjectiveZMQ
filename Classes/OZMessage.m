@@ -34,7 +34,7 @@
 		return nil;
 	}
 
-	NSData *data = [NSJSONSerialization dataWithJSONObject:object options:0 error:nil];
+	NSData *data = [NSJSONSerialization dataWithJSONObject:object options:0 error:NULL];
 	if (!data) {
 		return nil;
 	}
@@ -91,7 +91,7 @@
 - (id)JSONObjectAtIndex:(NSUInteger)index
 {
 	NSData *data = [self dataAtIndex:index];
-	id result = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+	id result = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
 	return result;
 }
 
@@ -104,7 +104,7 @@
 - (void)appendJSONObject:(id)object
 {
 	assert(object);
-	NSData *objectData = [NSJSONSerialization dataWithJSONObject:object options:0 error:nil];
+	NSData *objectData = [NSJSONSerialization dataWithJSONObject:object options:0 error:NULL];
 	[self appendPart:objectData];
 }
 

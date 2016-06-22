@@ -12,6 +12,15 @@
 
 #import "zmq.h"
 
+#if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR
+@interface OZSocket ()
+
+@property (nonatomic, strong) NSMutableSet *boundEndpoints;
+@property (nonatomic, strong) NSMutableSet *connectedEndpoints;
+
+@end
+#endif
+
 @implementation OZSocket (Subclass)
 
 - (id)initWithType:(int)socketType context:(OZContext *)context
@@ -42,7 +51,7 @@
 {
 	dispatch_sync(self.socketQueue, ^{
 		zmq_close(self.zmqSocket);
-		self.zmqSocket = nil;
+		self.zmqSocket = NULL;
 	});
 }
 
